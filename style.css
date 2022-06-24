@@ -1,0 +1,37 @@
+
+body {
+    text-align: center;
+}
+
+#invitation {
+    background-color: #f7eceb;
+    box-shadow: 16px 16px 16px #999;
+}
+
+#img {
+    background-image: url('1_small.jpg');
+    background-size: cover;
+    height: 300px;
+}
+
+h1 {
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+}
+
+span {
+    display: block;
+}
+
+@media screen and (min-width: 480px) {
+    #img {
+        background-image: url('1_medium.jpg');
+        height: 80vh;
+    }
+    #invitation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        padding: 16px;
+    }
+}
