@@ -3,11 +3,12 @@ body {
     font-family: 'Montserrat';
     font-size: 16px;
     text-align: center;
+    background-color: #fad7d5;
 }
 
 #invitation {
-    background-color: #f7eceb;
-    box-shadow: 16px 16px 16px #999;
+    background-color: #ffe7e6;
+    box-shadow: 16px 16px 32px #999;
 }
 
 #presentation {
