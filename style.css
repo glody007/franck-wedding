@@ -24,7 +24,7 @@ body {
 #img {
     background-image: url('1_small.jpg');
     background-size: cover;
-    height: 300px;
+    height: 30vh;
 }
 
 
@@ -46,7 +46,7 @@ span {
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1000px) {
     #img {
         background-image: url('1_medium.jpg');
         height: 90vh;
