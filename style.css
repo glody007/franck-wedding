@@ -36,6 +36,10 @@ h1 {
     font-size: 80px;
 }
 
+img {
+    width: 160px;
+}
+
 span {
     display: block;
 }
@@ -47,9 +51,15 @@ span {
 }
 
 @media screen and (min-width: 1000px) {
+    img {
+        width: 100px;
+    }    
     #img {
         background-image: url('1_medium.jpg');
-        height: 90vh;
+        height: auto;
+    }
+    h1 {
+        font-size: 40px;
     }
     #invitation {
         display: grid;
