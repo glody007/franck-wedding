@@ -1,5 +1,7 @@
 
 body {
+    font-family: 'Montserrat';
+    font-size: 16px;
     text-align: center;
 }
 
@@ -8,25 +10,46 @@ body {
     box-shadow: 16px 16px 16px #999;
 }
 
+#presentation {
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#content {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
 #img {
     background-image: url('1_small.jpg');
     background-size: cover;
     height: 300px;
 }
 
+
 h1 {
+    padding: 8px;
     border-top: 2px solid #444;
     border-bottom: 2px solid #444;
+    font-family: 'Great Vibes';
+    font-size: 48px;
 }
 
 span {
     display: block;
 }
 
-@media screen and (min-width: 480px) {
+#reception {
+    font-family: 'Josefin Slab';
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 700px) {
     #img {
         background-image: url('1_medium.jpg');
-        height: 80vh;
+        height: 90vh;
     }
     #invitation {
         display: grid;
