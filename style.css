@@ -51,6 +51,12 @@ span {
 }
 
 @media screen and (min-width: 1000px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     img {
         width: 100px;
     }    
@@ -63,6 +69,7 @@ span {
     }
     #invitation {
         display: grid;
+        width: 800px;
         grid-template-columns: 1fr 1fr;
         column-gap: 16px;
         padding: 16px;
