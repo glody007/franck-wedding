@@ -3,11 +3,21 @@ const DETAILS = 'Details'
 const INVITATION = 'Invitation'
 
 /**
- * Get invitation data and add set name and table
- * @param {String} url 
+ * Return the last part of url(the string after the last slash)
+ */
+const getInvitationNameFromUrl = () => {
+    const url = document.URL
+    const urlParts = url.split('/')
+    return urlParts[urlParts.length - 1]
+}
+
+/**
+ * Get invitation data from part in url
+ * and add set name and table
  */
  const getInvitationData = async () => {
-    const response = await fetch('/invitations/datas/franck', {
+    const invitationName = getInvitationNameFromUrl()
+    const response = await fetch(`/invitations/datas/${invitationName}`, {
         method: 'GET',
         credentials: 'same-origin',
         headers: {
