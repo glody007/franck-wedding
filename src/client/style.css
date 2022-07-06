@@ -11,6 +11,8 @@ body {
     position: absolute;
     left: 0;
     top: 50%;
+    font-weight: bold;
+    cursor: pointer;
     padding: 16px;
     color: #002d59;
     background-color: white;
@@ -69,6 +71,18 @@ span {
 
 #note {
     font-size: 12px;
+}
+
+.hide {
+    display: none;
+}
+
+.detail {
+    padding: 8px;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+    font-family: 'Great Vibes';
+    font-size: 80px;
 }
 
 @media screen and (min-width: 480px) {
