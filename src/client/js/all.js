@@ -14,7 +14,7 @@ const addDatasToTable = (invitations) => {
         tr.innerHTML = `
             <td>${invitation.name}</td>
             <td>${invitation.table}</td>
-            <td><a href='https://gleeful-creponne-48f50e.netlify.app/invitations/${invitation.name}'>Lien pour ${invitation.name}</td>
+            <td><a href='https://franck-gesmie.herokuapp.com/invitations/${invitation.name}'>Lien pour ${invitation.name}</td>
         `
         fragment.appendChild(tr)
     }
