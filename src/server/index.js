@@ -1,16 +1,28 @@
 const express = require('express')
+const path = require('path')
 const cors = require('cors')
 const bodyParser = require('body-parser')
+const mockApiResponse = require('./mockApi')
 
 const app = express()
 
 app.use(express.static('src/client'))
 
-app.get('/', function (req, res) {
-    // res.sendFile('dist/index.html')
-    res.sendFile(path.resolve('src/client/index.html'))
+app.get('/all', function (req, res) {
+    res.send(mockApiResponse)
 })
 
-app.listen(8000, () => {
-    console.log('Server is listening at port 8000')
+app.get('/:name', function (req, res) {
+    const invitation = mockApiResponse[req.params['name']]
+    if(invitation) {
+        res.sendFile(path.resolve('src/client/index.html'))
+    } else {
+        res.send('Invitation not found')
+    }
+})
+
+const port = process.env.PORT || 8080;
+
+app.listen(port, () => {
+    console.log('Server is listening at port ' + port)
 })
