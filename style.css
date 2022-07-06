@@ -23,7 +23,7 @@ body {
 }
 
 #img {
-    background-image: url('1_small.jpg');
+    background-image: url('new_small.jpeg');
     background-size: cover;
     height: 30vh;
 }
@@ -62,7 +62,7 @@ span {
         width: 100px;
     }    
     #img {
-        background-image: url('1_medium.jpg');
+        background-image: url('new_large.jpeg');
         height: auto;
     }
     h1 {
