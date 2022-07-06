@@ -8,11 +8,11 @@ const app = express()
 
 app.use(express.static('src/client'))
 
-app.get('/all', function (req, res) {
+app.get('/invitations', function (req, res) {
     res.send(mockApiResponse)
 })
 
-app.get('/:name', function (req, res) {
+app.get('/invitations/:name', function (req, res) {
     const invitation = mockApiResponse[req.params['name']]
     if(invitation) {
         res.sendFile(path.resolve('src/client/index.html'))
