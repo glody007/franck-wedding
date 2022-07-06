@@ -7,8 +7,23 @@ body {
     background-color: #e64f64;
 }
 
+#details-button {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 16px;
+    color: #002d59;
+    background-color: white;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
 #invitation {
     background-color: #002d59;
+    border-bottom-right-radius: 32px;
+    border-top-left-radius: 32px;
 }
 
 #presentation {
@@ -26,6 +41,7 @@ body {
     background-image: url('new_small.jpeg');
     background-size: cover;
     height: 30vh;
+    border-top-left-radius: 32px;
 }
 
 
