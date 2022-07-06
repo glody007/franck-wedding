@@ -3,17 +3,17 @@ body {
     font-family: 'Montserrat';
     font-size: 16px;
     text-align: center;
-    background-color: #fad7d5;
+    color: #c0cee6;
+    background-color: #e64f64;
 }
 
 #invitation {
-    background-color: #ffe7e6;
-    box-shadow: 16px 16px 32px #999;
+    background-color: #002d59;
 }
 
 #presentation {
     font-family: 'Playfair Display';
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -77,6 +77,6 @@ span {
         width: 800px;
         grid-template-columns: 1fr 1fr;
         column-gap: 16px;
-        padding: 16px;
+        padding: 0px;
     }
 }
