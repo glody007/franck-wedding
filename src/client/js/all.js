@@ -1,7 +1,3 @@
-const createLink = (name) => {
-    return ``
-}
-
 /**
  * Create table rows and add them to the table
  * @param {List} invitations 
@@ -14,7 +10,7 @@ const addDatasToTable = (invitations) => {
         tr.innerHTML = `
             <td>${invitation.name}</td>
             <td>${invitation.table}</td>
-            <td><a href='https://franck-gesmie.herokuapp.com/invitations/${invitation.name}'>Lien pour ${invitation.name}</td>
+            <td><a href='https://franck-gesmie.herokuapp.com/invitations/${key}'>Lien pour ${invitation.name}</td>
         `
         fragment.appendChild(tr)
     }
