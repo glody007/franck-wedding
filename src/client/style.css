@@ -105,6 +105,7 @@ span {
     #invitation {
         display: grid;
         width: 800px;
+        min-height: 90vh;
         grid-template-columns: 1fr 1fr;
         column-gap: 16px;
         padding: 0px;
