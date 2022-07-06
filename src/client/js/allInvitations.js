@@ -16,11 +16,6 @@
     } catch (error) {
         console.log(error.data)
     }
-}
+} 
 
-const main = () => {
-    getData('/invitations/datas/franck')
-    getData('/invitations')
-}
-
-main()
+getData('/invitations')

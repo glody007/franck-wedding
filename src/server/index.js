@@ -40,7 +40,7 @@ app.get('/invitations/datas/:name', function (req, res) {
     }
 })
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
     console.log('Server is listening at port ' + port)
