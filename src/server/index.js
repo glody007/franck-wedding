@@ -19,6 +19,10 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get('/invitations', function (req, res) {
+    res.sendFile(path.resolve('src/client/invitations.html'))
+})
+
+app.get('/invitations/datas', function (req, res) {
     res.send(mockApiResponse)
 })
 
